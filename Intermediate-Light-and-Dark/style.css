@@ -10,3 +10,34 @@ div {
 	border: 1px solid #000;
 	margin:  20px auto;
 }
+#ease{
+	transition: width 2s ease; 
+}
+#ease:hover{
+	width: 400px;
+}
+#ease-in{
+	transition: height 3s ease-in;
+}
+#ease-in:hover{
+	height: 400px;
+}
+#linear{
+	transition: background-color 2s linear;
+}
+#linear:hover{
+	background-color: red;
+}
+#ease-out{
+	transition: border-color 1s ease-out;
+}
+#ease-out:hover{
+	border-color: green;
+	border-width: 10px;
+}
+#ease-in-out{
+	transition: border-radius 2.5s ease-in-out;
+}
+#ease-in-out:hover{
+	border-radius: 25px;
+}
