@@ -1,0 +1,21 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+header{
+	height: 70px;
+	background-color: #34495e;
+}
+nav ul {
+	list-style-type: none;
+	height: 70px;
+	
+}
+nav li{
+	background-color: #7f8c8d;
+	display: inline;
+}
+nav a{
+	height: 70px;
+
+}
