@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height        : 100vh;
+	display       : flex;
+	flex-direction: column;
+	font-family: 'IBM Plex Sans', sans-serif;
+	background: url('img/hypnotize.png');
+}
+
+main {
+	height: 100vh;
+	width: 70%;
+	margin: 0 auto;
+	box-shadow: 8px 0px 5px 0px rgba(0,0,0,0.11), -8px 0px 5px 0px rgba(0,0,0,0.11);
+	background: #fff;
+	padding: 20px;
+}
+
+
+header {
+	height    : 70px;
+	background: #2F6557;
+	line-height: 70px;
+	padding: 0 20px;
+	color: #efefef;
+	text-transform: uppercase;
+}
+
+article {
+	align-items: center;
+	width: 100%;
+	margin-top: 20px;
+}
+
+
+footer {
+	height: 50px;
+	background: #2F6557;
+	line-height: 50px;
+	text-align:  center;
+	color: #fff;
+}
+
+.hero {
+	width: 100%;
+	height: 300px;
+	background: url('img/learning-to-code.jpg') no-repeat center;
+	background-size: cover;
+}
+
+h2 {
+	padding-bottom: 10px;
+	padding-top: 20px;
+	color: #730808;
+	font-weight:  bold;
+	float: right;
+}
+
+hr {
+	margin-top: 20px;
+}
+
+.col-left {
+	width: 70%;
+	height: 200px;
+	background: lightgrey;
+	float: left;
+	transition: width 2s ease;
+}
+
+.col-left::before {
+	content: 'Content';
+	font-size: 1.2em;
+	color: green;
+	font-weight: bold;
+}
+
+.col-right {
+	width: 30%;
+	height: 200px;
+	background: grey;
+	float: left;
+	transition: width 2s ease;
+}
+
+.col-right::before {
+	content: 'Sidebar';
+	font-size: 1.5em;
+	color: red;
+	font-weight: bold;
+}
+
+.col-container:hover .col-left {
+	width: 30%;
+	background: grey;
+}
+
+.col-container:hover .col-left::before {
+	content: 'Sidebar';
+	color: red;
+}
+
+.col-container:hover .col-right {
+	width: 70%;
+	background: lightgrey;
+}
+.col-container:hover .col-right::before {
+	content: 'Content';
+	color: green;
+}
+
